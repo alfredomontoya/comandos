@@ -12,9 +12,7 @@ set "BUSCAR=%~1"
 
 >nul 2>&1 net session || (
     echo Re-lanzando como Administrador...
-    set "BATFILE=%~f0"
-    set "ARGS=%*"
-    echo Start-Process cmd -ArgumentList '/c',"""%BATFILE%"" %ARGS%" -Verb RunAs | powershell -NoProfile -Command -
+    powershell -NoProfile -Command "Start-Process cmd -ArgumentList '/c', '%~f0', '%*' -Verb RunAs"
     exit /b
 )
 
