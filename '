@@ -1,1 +1,0 @@
-        if ($pn -match 'Bentley|MicroStation|Autodesk|DgnDb|RealDWG|HDR') { Write-Host ('  ' + $pn + '  - + $pc) }

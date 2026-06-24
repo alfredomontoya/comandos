@@ -8,6 +8,9 @@ setlocal enabledelayedexpansion
 )
 
 cls
+echo ==================================================
+echo ***** ACTUALIZAR CONTRASEÑA DE ADMINISTRADOR *****
+echo ==================================================
 echo Usuarios locales:
 echo =================
 echo.
@@ -33,7 +36,7 @@ if %COUNT% equ 0 (
 
 echo.
 set OPC=
-set /p OPC="Seleccione numero (0=salir): "
+set /p OPC="Seleccionar nro de usuario para actualizar la contrasena: "
 if "%OPC%"=="0" exit /b
 if "%OPC%"=="" exit /b
 

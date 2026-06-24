@@ -7,9 +7,12 @@ setlocal enabledelayedexpansion
     exit /b
 )
 
+:loop
 cls
+echo ==========================================
+echo ***** REMOVER USUARIO ADMINISTRADOR *****
 echo Usuarios del grupo Administradores:
-echo ===================================
+echo ==========================================
 echo.
 
 set COUNT=0
@@ -35,13 +38,13 @@ set OPC=
 set /p OPC="Seleccione numero a quitar (0=salir): "
 
 if "%OPC%"=="0" exit /b
-if "%OPC%"=="" exit /b
+if "%OPC%"=="" goto :loop
 
 set "USUARIO=!USER%OPC%!"
 if "%USUARIO%"=="" (
     echo Numero invalido.
     pause
-    exit /b
+    goto :loop
 )
 
 echo.
@@ -54,3 +57,4 @@ if %errorlevel% equ 0 (
 )
 echo.
 pause
+goto :loop

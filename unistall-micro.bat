@@ -3,13 +3,14 @@ setlocal
 
 >nul 2>&1 net session || (
     echo Re-lanzando como Administrador...
-    set "BATFILE=%~f0"
-    echo Start-Process cmd -ArgumentList '/c','%BATFILE%' -Verb RunAs | powershell -NoProfile -Command -
+    powershell -NoProfile -Command "Start-Process cmd -ArgumentList '/c', '%~f0' -Verb RunAs"
     exit /b
 )
 
+echo ==================================================================
+echo ***** DESINSTALAR PROGRAMAS MICROSTATION / BENTLEY *****
 echo Programas instalados relacionados con MicroStation / Bentley:
-echo =============================================================
+echo ==================================================================
 echo.
 
 set "PS1=%TEMP%\bentley_%RANDOM%.ps1"
