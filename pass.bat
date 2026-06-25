@@ -20,10 +20,12 @@ where wmic >nul 2>&1
 if !ERRORLEVEL! equ 0 (
     for /f "skip=1 delims=" %%a in ('wmic useraccount where "localaccount=true" get name 2^>nul') do (
         for /f "delims=" %%b in ("%%a") do (
-            if not "%%b"=="" (
+            set "usr=%%b"
+            if not "!usr!"=="" (
+                for /l %%t in (1,1,32) do if "!usr:~-1!"==" " set "usr=!usr:~0,-1!"
                 set /a COUNT+=1
-                set "USER!COUNT!=%%b"
-                echo [!COUNT!] %%b
+                set "USER!COUNT!=!usr!"
+                echo [!COUNT!] !usr!
             )
         )
     )
