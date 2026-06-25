@@ -12,3 +12,10 @@ Colección de herramientas de administración para Windows enfocadas en gestión
 | `pass.bat` | Lista usuarios locales y permite cambiar la contraseña del seleccionado. |
 | `unistall-micro.bat` | Busca programas MicroStation/Bentley y los desinstala en lote (con elevación automática de admin). |
 | `unistall-progra.bat` | Busca programas por texto recibido como parámetro y desinstala el seleccionado. |
+
+## Pasos a seguir
+
+1. Logear como administrador
+2. Desinstalar Microstation (`unistall-micro.bat`)
+3. Actualizar contraseña administrador (`pass.bat`)
+4. Quitar permisos de administrador a otros usuarios (`remove-admin.bat`)
