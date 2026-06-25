@@ -19,3 +19,4 @@ Colección de herramientas de administración para Windows enfocadas en gestión
 2. Desinstalar Microstation (`unistall-micro.bat`)
 3. Actualizar contraseña administrador (`pass.bat`)
 4. Quitar permisos de administrador a otros usuarios (`remove-admin.bat`)
+5. Registrar en tupejiapp (http://splaadm23p-10)
