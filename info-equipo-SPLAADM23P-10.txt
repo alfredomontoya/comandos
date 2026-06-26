@@ -1,0 +1,17 @@
+========================================
+      INFORMACION DEL EQUIPO
+========================================
+
+NOMBRE DEL EQUIPO: SPLAADM23P-10 
+MODELO: OptiPlex 7000   
+SERIE: 203R9R3        
+PROCESADOR: 12th Gen Intel(R) Core(TM) i7-12700   
+MEMORIA (por modulo): 17179869184   bytes 
+MEMORIA TOTAL: 15.7 GB
+DISCO: Kingston DT Guitar USB Device    
+DISCO: NVMe BC711 NVMe SK hynix 512GB   
+DISCO: ST2000LM015-2E8174               
+VIDEO: AMD Radeon RX 640           
+VIDEO: Intel(R) UHD Graphics 770   
+ 
+Archivo generado: info-equipo-SPLAADM23P-10.txt 
